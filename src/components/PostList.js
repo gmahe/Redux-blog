@@ -38,9 +38,8 @@ class PostList extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  // When is being called?
   console.log("List -- mapStateToProps()");
-  // The key bellow will be the name user in getState().key
+  // The key bellow will be the name used in getState().key
   return { posts: state.posts };
 };
 // export default connect(mapStateToProps, { fetchPostsAndUsers })(PostList);
