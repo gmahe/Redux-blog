@@ -26,12 +26,12 @@ export const fetchPosts = () => {
     const response = await jsonPlaceHolder.get("/posts");
     dispatch({
       type: "FETCH_POST",
-      // payload: response.data,
-      payload: [
-        { userId: 4, title: "My Post 1", body: "body", id: 1 },
-        { userId: 2, title: "My Post 2", body: "body", id: 2 },
-        { userId: 3, title: "My Post 3", body: "body", id: 3 },
-      ],
+      payload: response.data,
+      // payload: [
+      //   { userId: 4, title: "My Post 1", body: "body", id: 1 },
+      //   { userId: 2, title: "My Post 2", body: "body", id: 2 },
+      //   { userId: 3, title: "My Post 3", body: "body", id: 3 },
+      // ],
     });
   };
 };
